@@ -5,27 +5,53 @@
  */
 package ense.pkg374.lab.pkg4;
 
+import java.util.Collection;
+import java.util.HashMap;
+
 /**
  *
  * @author Clayton
  */
-public class NonLivingThings 
+public abstract class NonLivingThings extends ParkElement 
 {
-    private nonLivingProperties Characteristic;
-    getNonLivingProperties()
+    private HashMap Characteristic = new HashMap();
+    
+    public NonLivingThings(HashMap properties) 
     {
-        
+        if (properties == null) 
+        {
+            this.Characteristic = new HashMap();
+        } 
+        else
+        {
+            this.Characteristic = new HashMap(properties);
+        }
     }
-    Object getNonLivingProperty(String PropertyName)
+    Collection getNonLivingProperties()
     {
-        return 
+        return Characteristic.values();
     }
-    boolean beenEaten()
+    Object getNonLivingProperty(String propertyName)
     {
-        
+        return Characteristic.get(propertyName);
+    }
+    void beenEaten()
+    {
+        Object food = Characteristic.get("amountOfFood");
+        int foodLeft = Integer.parseInt(food.toString());
+        Characteristic.put("amountOfFood",foodLeft - 1);
     }
     boolean hasFood()
     {
-        
+        Object food = Characteristic.get("amountOfFood");
+        int foodLeft = Integer.parseInt(food.toString());
+        if (foodLeft >= 1)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
     }
 }

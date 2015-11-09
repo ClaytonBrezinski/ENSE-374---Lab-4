@@ -11,27 +11,32 @@ package ense.pkg374.lab.pkg4;
  */
 public class ParkElement 
 {
-private int xLocation;
-private int yLocation;
-private boolean alive;
+    private int xLocation;
+    private int yLocation;
+    private boolean alive;
 
-int getXLocation()
-{
-    return xLocation;
-}
-int getYLocation()
-{
-    return yLocation;
-}
-String getLocation()
-{
-    int xCo = getXLocation();
-    int yCo = getYLocation();
-    String returnString = xCo + "," + yCo;
-    return returnString;      
-}
-boolean getStatus()
-{
-    return alive;
-}
+    void initializeParkElement(int xCo, int yCo)
+    {
+       this.xLocation = xCo;
+       this.yLocation = yCo;
+    }
+    int getXLocation()
+    {
+        return xLocation;
+    }
+    int getYLocation()
+    {
+        return yLocation;
+    }
+    String getLocation()
+    {
+        int xCo = getXLocation();
+        int yCo = getYLocation();
+        String returnString = xCo + "," + yCo;
+        return returnString;      
+    }
+    boolean getStatus()
+    {
+        return alive;
+    }
 }
