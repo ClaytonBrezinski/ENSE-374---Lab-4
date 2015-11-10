@@ -14,26 +14,33 @@ import java.util.List;
 public class Park 
 {
     private List inventory;
+    private Location[][] parkMap;
 
-    public void park()
+    public Park()
     {
         inventory = new LinkedList();
+        parkMap = new Location[100][100];
     }
-    public void addParkElement(String type, String animalName, int xStart, int yStart, boolean isMale, int age, String[] whatItEats)
+    public Park(int xMax, int yMax)
+    {
+        inventory = new LinkedList();
+        parkMap = new Location[xMax][yMax];
+    }
+    public void addParkElement(String type, String animalName, int xStart, int yStart, boolean isMale, int age, String[] whatItEat)
     {
         if (type == "AnimalsWithWings")
         {
-            AnimalsWithWings parkElement = new AnimalsWithWings(animalName, xStart, yStart, isMale, age, whatItEats);
+            AnimalsWithWings parkElement = new AnimalsWithWings(animalName, xStart, yStart, isMale, age, whatItEat);
             inventory.add(parkElement);
         }
         else if (type == "GroundAnimals")
         {
-            GroundAnimals parkElement = new GroundAnimals(animalName, xStart, yStart, isMale, age, whatItEats);
+            GroundAnimals parkElement = new GroundAnimals(animalName, xStart, yStart, isMale, age, whatItEat);
             inventory.add(parkElement);
         }
         else if (type == "Insects")
         {
-            Insects parkElement = new Insects(animalName, xStart, yStart, isMale, age, whatItEats);
+            Insects parkElement = new Insects(animalName, xStart, yStart, isMale, age, whatItEat);
             inventory.add(parkElement);         
         }
         else
@@ -58,8 +65,23 @@ public class Park
             // error in addParkElement area
         }
     }
-    ParkElement initializeParkElement()
+    void initializeParkElements()
     {
-        
+        addParkElement("AnimalsWithWings", "blueJay", 1, 1, true, 24, (whatItEats.BLUE_JAY.toString()).split(","));
+        addParkElement("GroundAnimals","Fox", 5, 5, true, 22, (whatItEats.FOX.toString()).split(","));
+        addParkElement("Insects", "Caterpillar", 7, 7,true,1,(whatItEats.CATERPILLAR.toString()).split(","));
+        addParkElement("EdibleObject", "Trees/Shrubs", 9, 9, 90);
+        addParkElement("NonEdibleObject", "Rock", 10, 10, 1000);
+    }
+    void runPark()
+    {
+        // this is where park will tell the animals to move and perform actions.
+    }
+    void getParkElements()
+    {
+        for (int i = 0; i < inventory.size(); i++) 
+        {
+            Object temp = inventory.get(i);
+        }
     }
 }

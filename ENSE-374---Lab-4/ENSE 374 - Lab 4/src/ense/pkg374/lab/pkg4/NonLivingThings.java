@@ -16,7 +16,7 @@ public abstract class NonLivingThings extends ParkElement
 {
     private HashMap Characteristic = new HashMap();
     
-    public NonLivingThings(HashMap properties) 
+    public void NonLivingThings(HashMap properties) 
     {
         if (properties == null) 
         {
@@ -25,6 +25,7 @@ public abstract class NonLivingThings extends ParkElement
         else
         {
             this.Characteristic = new HashMap(properties);
+            // put in that it cannot move here
         }
     }
     Collection getNonLivingProperties()

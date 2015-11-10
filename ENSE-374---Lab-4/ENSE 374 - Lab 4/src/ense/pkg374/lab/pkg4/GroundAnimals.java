@@ -13,7 +13,7 @@ import java.util.HashMap;
  */
 public class GroundAnimals extends LivingThings
 {
-    public void GroundAnimals(String animalName, int xStart, int yStart, boolean isMale, int age, String[] whatItEats)
+    public GroundAnimals(String animalName, int xStart, int yStart, boolean isMale, int age, String[] whatItEats)
     {
         HashMap properties = populateHashMap(age, isMale, animalName, whatItEats);
         initializeParkElement(xStart,yStart);

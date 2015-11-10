@@ -11,14 +11,16 @@ import java.util.InputMismatchException;
  *
  * @author Clayton
  */
-public class ENSE374Lab4 {
+public class ENSE374Lab4 
+{
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) 
     {
-        ParkElement parkElement;
-        
+        Park park = new Park(150,150);
+        park.initializeParkElements();
+        park.getParkElements();
     }
     
 }

@@ -11,27 +11,30 @@ package ense.pkg374.lab.pkg4;
  */
 public class ParkElement 
 {
-    private int xLocation;
-    private int yLocation;
+    private Location location;
     private boolean alive;
 
     void initializeParkElement(int xCo, int yCo)
     {
-       this.xLocation = xCo;
-       this.yLocation = yCo;
+       location = new Location(xCo,yCo);
     }
-    int getXLocation()
+    int getXCoords()
     {
-        return xLocation;
+        return location.getXLocation();
     }
-    int getYLocation()
+    int getYCoords()
     {
-        return yLocation;
+        return location.getYLocation();
     }
-    String getLocation()
+    void setXYCoords(int x, int y)
     {
-        int xCo = getXLocation();
-        int yCo = getYLocation();
+        location.setXLocation(x);
+        location.setYLocation(y);
+    }
+    String getCoords()
+    {
+        int xCo = location.getXLocation();
+        int yCo = location.getYLocation();
         String returnString = xCo + "," + yCo;
         return returnString;      
     }

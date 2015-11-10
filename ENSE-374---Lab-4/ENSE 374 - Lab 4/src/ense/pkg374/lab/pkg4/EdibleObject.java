@@ -13,7 +13,7 @@ import java.util.HashMap;
  */
 public class EdibleObject extends NonLivingThings
 {
-    public void EdibleObject(String organismName, int xCo, int yCo, int age)
+    public EdibleObject(String organismName, int xCo, int yCo, int age)
     {
         HashMap properties = populateHashMap(age, organismName);
         initializeParkElement(xCo,yCo);
