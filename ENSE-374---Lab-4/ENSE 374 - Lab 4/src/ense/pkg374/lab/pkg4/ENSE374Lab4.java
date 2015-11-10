@@ -20,7 +20,6 @@ public class ENSE374Lab4
     {
         Park park = new Park(150,150);
         park.initializeParkElements();
-        park.findParkElement(5,5);
         park.printPark();
     }
     
