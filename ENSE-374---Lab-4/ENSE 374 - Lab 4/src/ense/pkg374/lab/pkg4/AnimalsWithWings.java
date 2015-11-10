@@ -16,7 +16,7 @@ public class AnimalsWithWings extends LivingThings
     public AnimalsWithWings(String animalName, int xStart, int yStart, boolean isMale, int age, String[] whatItEats)
     {
         HashMap properties = populateHashMap(age, isMale, animalName, whatItEats);
-        initializeParkElement(xStart,yStart);
+        initializeParkLocation(xStart,yStart);
         LivingThings(properties);
     }
     public HashMap populateHashMap(int age, boolean isMale, String elementName, String[] whatItEats)

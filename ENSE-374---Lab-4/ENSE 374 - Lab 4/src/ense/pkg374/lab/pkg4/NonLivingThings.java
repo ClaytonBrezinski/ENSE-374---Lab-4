@@ -28,11 +28,11 @@ public abstract class NonLivingThings extends ParkElement
             // put in that it cannot move here
         }
     }
-    Collection getNonLivingProperties()
+    Collection getProperties()
     {
         return Characteristic.values();
     }
-    Object getNonLivingProperty(String propertyName)
+    Object getProperty(String propertyName)
     {
         return Characteristic.get(propertyName);
     }

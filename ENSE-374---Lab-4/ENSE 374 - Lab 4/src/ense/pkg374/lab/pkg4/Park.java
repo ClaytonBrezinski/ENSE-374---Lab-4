@@ -30,18 +30,25 @@ public class Park
     {
         if (type == "AnimalsWithWings")
         {
-            AnimalsWithWings parkElement = new AnimalsWithWings(animalName, xStart, yStart, isMale, age, whatItEat);
-            inventory.add(parkElement);
+            AnimalsWithWings instantiatedElement = new AnimalsWithWings(animalName, xStart, yStart, isMale, age, whatItEat);
+            inventory.add(instantiatedElement);
+            ParkElement parkElement = instantiatedElement.getParkElement();
+            parkMap[xStart][yStart] = new Location(xStart, yStart, parkElement);
+
         }
         else if (type == "GroundAnimals")
         {
-            GroundAnimals parkElement = new GroundAnimals(animalName, xStart, yStart, isMale, age, whatItEat);
-            inventory.add(parkElement);
+            GroundAnimals instantiatedElement = new GroundAnimals(animalName, xStart, yStart, isMale, age, whatItEat);
+            inventory.add(instantiatedElement);
+            ParkElement parkElement = instantiatedElement.getParkElement();
+            parkMap[xStart][yStart] = new Location(xStart, yStart, parkElement);  
         }
         else if (type == "Insects")
         {
-            Insects parkElement = new Insects(animalName, xStart, yStart, isMale, age, whatItEat);
-            inventory.add(parkElement);         
+            Insects instantiatedElement = new Insects(animalName, xStart, yStart, isMale, age, whatItEat);
+            inventory.add(instantiatedElement); 
+            ParkElement parkElement = instantiatedElement.getParkElement();
+            parkMap[xStart][yStart] = new Location(xStart, yStart, parkElement);   
         }
         else
         {
@@ -52,13 +59,17 @@ public class Park
     {
         if  (type == "EdibleObject")
         {
-            EdibleObject parkElement = new EdibleObject(organismName, xCo, yCo, age);
-            inventory.add(parkElement);       
+            EdibleObject instantiatedElement = new EdibleObject(organismName, xCo, yCo, age);
+            inventory.add(instantiatedElement);
+            ParkElement parkElement = instantiatedElement.getParkElement();
+            parkMap[xCo][yCo] = new Location(xCo, yCo, parkElement); 
         }
         else if (type == "NonEdibleObject")
         {
-            NonEdibleObject parkElement = new NonEdibleObject(organismName, xCo, yCo, age);
-            inventory.add(parkElement);        
+            NonEdibleObject instantiatedElement = new NonEdibleObject(organismName, xCo, yCo, age);
+            inventory.add(instantiatedElement);
+            ParkElement parkElement = instantiatedElement.getParkElement();
+            parkMap[xCo][yCo] = new Location(xCo, yCo, parkElement); 
         }
         else
         {
@@ -77,11 +88,34 @@ public class Park
     {
         // this is where park will tell the animals to move and perform actions.
     }
-    void getParkElements()
+    void findParkElement(int xCoord, int yCoord)
     {
         for (int i = 0; i < inventory.size(); i++) 
         {
-            Object temp = inventory.get(i);
+            if (inventory.get(i) instanceof AnimalsWithWings)
+            {
+                String temp = inventory.get(i).toString();
+                int o = 0;
+            }
         }
+    }
+    void printPark()
+    {
+        for (int j = 0; j < parkMap[j].length; j++)
+        {
+            for (int i = 0; i < parkMap.length; i++)
+            {
+                if (parkMap[j][i] != null)
+                {
+                    ParkElement printElement = parkMap[j][i].getParkElement();
+                    printElement.getCoords();
+                }
+                else
+                {
+                    System.out.print("x");
+                }
+            }
+        }
+        
     }
 }

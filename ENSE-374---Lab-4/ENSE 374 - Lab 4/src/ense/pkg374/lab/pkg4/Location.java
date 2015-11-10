@@ -13,16 +13,18 @@ public class Location
 {
     private int xCoordinate;
     private int yCoordinate;
-    
+    private ParkElement parkElement;
     public Location()
     {
         this.xCoordinate = 1;
         this.yCoordinate = 1;
+        parkElement = null;
     }
-    public Location(int xCo, int yCo)
+    public Location(int xCo, int yCo, ParkElement element)
     {
         this.xCoordinate = xCo;
         this.yCoordinate = yCo;
+        this.parkElement = element;
     }
     public int getXLocation()
     {
@@ -32,6 +34,10 @@ public class Location
     {
         return yCoordinate;
     }
+    public ParkElement getParkElement()
+    {
+        return parkElement;
+    }
     public void setXLocation(int xCo)
     {
         this.xCoordinate = xCo;
@@ -39,5 +45,9 @@ public class Location
     public void setYLocation(int yCo)
     {
         this.yCoordinate = yCo;
+    }
+    public void setParkElement(ParkElement element)
+    {
+         this.parkElement = element;
     }
 }

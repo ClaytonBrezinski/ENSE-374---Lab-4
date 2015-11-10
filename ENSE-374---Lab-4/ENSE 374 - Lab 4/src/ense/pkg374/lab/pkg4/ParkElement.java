@@ -14,15 +14,19 @@ public class ParkElement
     private Location location;
     private boolean alive;
 
-    void initializeParkElement(int xCo, int yCo)
+    public void initializeParkLocation(int xCo, int yCo)
     {
-       location = new Location(xCo,yCo);
+       location = new Location(xCo,yCo, this);
     }
-    int getXCoords()
+    public ParkElement getParkElement()
+    {
+        return this;
+    }
+    public int getXCoords()
     {
         return location.getXLocation();
     }
-    int getYCoords()
+    public int getYCoords()
     {
         return location.getYLocation();
     }

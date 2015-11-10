@@ -24,11 +24,11 @@ public abstract class LivingThings extends ParkElement
             this.Characteristic = new HashMap(properties);
         }
     }
-    Collection getLivingProperties()
+    Collection getProperties()
     {
         return Characteristic.values();
     }
-    Object getLivingProperty(String propertyName)
+    Object getProperty(String propertyName)
     {
         return Characteristic.get(propertyName);
     }
@@ -69,25 +69,5 @@ public abstract class LivingThings extends ParkElement
         //      if living thing -> change alive to false
         
         Characteristic.put("daysSinceEaten", 0);
-    }   
-    public String[] whatItEats(String type)
-    {
-        String[] a;
-        switch(type)
-        {
-            case "CATERPILLAR":     return new String[] {"TREES_SHRUBS"};
-            case "BLUE_JAY":        a =  new String[] {"CATERPILLAR", "GRASSHOPPER", "TREES_SHRUBS"};
-            case "HAWK":            a = new String[] {"MOUSE","SQUIRREL"};
-            case "GRASSHOPPER":     a = new String[] {"GRASS"};
-            case "MOUSE":           a = new String[] {"TREES_SHRUBS", "GRASS"};
-            case "FOX":             a = new String[] {"BLUE_JAY", "MOUSE", "SQUIRREL", "RABBIT"};
-            case "SQUIRREL":        a = new String[] {"TREES_SHRUBS"};
-            case "RABBIT":          a = new String[] {"GRASS"};
-            case "DEER":            a = new String[] {"TREES_SHRUBS", "GRASS"};
-            case "WOLF":            a = new String[] {"RABBIT","DEER"};
-            default:              a = new String[] {"Unspecified"};
-            return a;
-        }
-    }
-    
+    }      
 }
