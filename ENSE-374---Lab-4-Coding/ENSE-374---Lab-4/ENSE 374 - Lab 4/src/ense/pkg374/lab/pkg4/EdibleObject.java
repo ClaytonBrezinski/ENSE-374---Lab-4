@@ -13,12 +13,29 @@ import java.util.HashMap;
  */
 public class EdibleObject extends NonLivingThings
 {
-    public EdibleObject(String organismName, int xCo, int yCo, int age)
+    /* 
+    Purpose:  default constructor
+    Returns:
+    */
+    public EdibleObject(String organismName, int age)
     {
         HashMap properties = populateHashMap(age, organismName);
-        initializeParkLocation(xCo,yCo);
         NonLivingThings(properties);
     }
+    
+    /* 
+    Purpose: create the organism
+    Returns:
+    */
+    public void create(String organismName, int age)
+    {
+        new EdibleObject(organismName, age);
+    }
+    
+    /* 
+    Purpose: populate the hashmap from the given variables
+    Returns:
+    */
     private HashMap populateHashMap(int age, String elementName)
     {
         HashMap returnProperties = new HashMap();

@@ -7,6 +7,7 @@ package ense.pkg374.lab.pkg4;
 import java.util.Scanner;
 import java.util.Arrays;
 import java.util.InputMismatchException;
+
 /**
  *
  * @author Clayton
@@ -18,9 +19,10 @@ public class ENSE374Lab4
      */
     public static void main(String[] args) 
     {
-        Park park = new Park(150,150);
+        Park park = new Park(10,10);
         park.initializeParkElements();
         park.printPark();
+        park.runPark();
     }
     
 }

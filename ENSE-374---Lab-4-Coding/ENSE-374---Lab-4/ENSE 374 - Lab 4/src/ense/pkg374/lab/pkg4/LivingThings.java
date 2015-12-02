@@ -9,10 +9,15 @@ import java.util.*;
  *
  * @author Clayton
  */
-public abstract class LivingThings extends ParkElement
+public abstract class LivingThings implements ParkElement
 {
     private HashMap Characteristic = new HashMap();
+    private boolean alive;
     
+    /* 
+    Purpose: default constructor based on user input
+    Returns:
+    */
     public void LivingThings(HashMap properties) 
     {
         if (properties == null) 
@@ -23,15 +28,31 @@ public abstract class LivingThings extends ParkElement
         {
             this.Characteristic = new HashMap(properties);
         }
+        alive = true;
     }
+    
+    /* 
+    Purpose: 
+    Returns: Collection- return all the properties of the living thing
+    */
     public Collection getProperties()
     {
         return Characteristic.values();
     }
+    
+    /* 
+    Purpose: 
+    Returns: object- corresponding variable to the given propertyName 
+    */
     public Object getProperty(String propertyName)
     {
         return Characteristic.get(propertyName);
     }
+    
+    /* 
+    Purpose: function to state if the animal has starved or not
+    Returns: true: animal has starved, false: animal has not starved
+    */
     public boolean hasStarved()
     {
         Object starve = Characteristic.get("daysSinceEaten");
@@ -49,25 +70,94 @@ public abstract class LivingThings extends ParkElement
             return false;
         }
     }
-    public void moveToClosestFood()
+    
+    /* 
+    Purpose: if the living thing has been eaten, set its living status as not alive
+    Returns: 
+    */
+    public void beenEaten()
     {
-        // check surrounding in 1 square arc, if one is present go there, if not, search a square arc one bigger, 
-        // if at the food currently, eatFood();
+        alive = false;
     }
-    private void move(int x, int y)
+    
+    /* 
+    Purpose: 
+    Returns: boolean- true: animal has food, false: animal does not have food
+    */
+    public boolean hasFood()
     {
-        setXYCoords(x,y);
+        if (alive == true)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
     }
-    private void findFood()
-    {
-        // first check surroundings in a 1 square arc
-    }
+
+    /* 
+    Purpose: if the animal has been exposed to food, reset its daysSinceEaten counter
+    Returns: 
+    */
     private void eatFood()
     {
-        // if at food location -> days since eaten = 0
-        //      if nonliving thing -> increment has been eaten. 
-        //      if living thing -> change alive to false
-        
         Characteristic.put("daysSinceEaten", 0);
-    }      
+    }   
+    
+    /* 
+    Purpose: create the organism
+    Returns:
+    */
+    public void create(String organismName, int age)
+    {
+        // never will be hit
+    }
+    
+    /* 
+    Purpose: determine what the organism can eat and return it
+    Returns: String[] - list of all the food that the organism can consume
+    */
+    public String[] whatItEats()
+    {
+        String whatItEats = this.getProperty("whatItEats").toString();
+        whatItEats = whatItEats.replaceAll(" ", "");
+        return whatItEats.split(",");
+    }
+    
+    /* 
+    Purpose: 
+    Returns:int- the max distance the organism can travel in 1 day
+    */
+    public int getMaxTravelDistance()
+    {
+       return (Integer) this.getProperty("Travel Distance");
+    }
+    
+    /* 
+    Purpose: 
+    Returns: boolean- the organism is a living thing
+    */
+    public boolean isLivingThing()
+    {
+        return true;
+    }
+    
+    /* 
+    Purpose: sets the givene property
+    Returns: 
+    */
+    public void setProperty(String propertyName, String value)
+    {
+        Characteristic.put(propertyName, value);
+    }
+    
+    /* 
+    Purpose: sets the givene property
+    Returns: 
+    */
+    public void setProperty(String propertyName, int value)
+    {
+        Characteristic.put(propertyName, value);
+    }
 }

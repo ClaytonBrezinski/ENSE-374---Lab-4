@@ -5,6 +5,7 @@
  */
 package ense.pkg374.lab.pkg4;
 
+import java.util.Arrays;
 import java.util.HashMap;
 
 /**
@@ -13,18 +14,39 @@ import java.util.HashMap;
  */
 public class AnimalsWithWings extends LivingThings
 {
-    public AnimalsWithWings(String animalName, int xStart, int yStart, boolean isMale, int age, String[] whatItEats)
+    
+    /* 
+    Purpose: default constructor
+    Returns:
+    */
+    public AnimalsWithWings(String animalName, boolean isMale, int age, String[] whatItEats)
     {
         HashMap properties = populateHashMap(age, isMale, animalName, whatItEats);
-        initializeParkLocation(xStart,yStart);
         LivingThings(properties);
     }
+    
+    /* 
+    Purpose: create the organism
+    Returns:
+    */
+    public void create(String animalName, boolean isMale, int age, String[] whatItEats)
+    {
+        new AnimalsWithWings(animalName, isMale, age, whatItEats);
+    }
+    
+    /* 
+    Purpose: populate the hashmap from the given variables
+    Returns:
+    */
     private HashMap populateHashMap(int age, boolean isMale, String elementName, String[] whatItEats)
     {
         HashMap returnProperties = new HashMap();
+        String whatItEatsDelimmited = Arrays.toString(whatItEats);
+        whatItEatsDelimmited = whatItEatsDelimmited.replace("[", "");
+        whatItEatsDelimmited = whatItEatsDelimmited.replace("]", "");;
         
         returnProperties.put("elementName", elementName);
-        returnProperties.put("whatItEats", whatItEats);
+        returnProperties.put("whatItEats", whatItEatsDelimmited);
         returnProperties.put("Travel Distance",5 );
         returnProperties.put("hasTraveled",0 );
         returnProperties.put("daysSinceEaten",0 );
