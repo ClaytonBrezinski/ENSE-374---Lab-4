@@ -1,0 +1,348 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.11.2)  1 DEC 2015 20:56
+entering extended mode
+**"C:/Users/Dolan/Downloads/School/GitHub Repositories/ENSE-374---Lab-4/SystemD
+esignDoc.tex"
+
+("C:/Users/Dolan/Downloads/School/GitHub Repositories/ENSE-374---Lab-4/SystemDe
+signDoc.tex"
+LaTeX2e <2014/05/01>
+Babel <3.9l> and hyphenation patterns for 68 languages loaded.
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\article.cls"
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\size11.clo"
+File: size11.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+Package: graphics 2014/10/28 v1.0p Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count87
+))
+\Gin@req@height=\dimen103
+\Gin@req@width=\dimen104
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\pst-sigsys\pst-sigsys.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\pstricks\pstricks.sty"
+Package: pstricks 2013/12/12 v0.60 LaTeX wrapper for `PSTricks' (RN,HV)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\pstricks\base\pstricks.tex"
+("C:\Program Files\MiKTeX 2.9\tex\generic\xkeyval\pst-xkey.tex"
+File: pst-xkey.tex 2005/11/25 v1.6 PSTricks specialization of xkeyval (HA)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\xkeyval\xkeyval.sty"
+Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\xkeyval\xkeyval.tex"
+("C:\Program Files\MiKTeX 2.9\tex\generic\xkeyval\xkvutils.tex"
+\XKV@toks=\toks15
+\XKV@tempa@toks=\toks16
+)
+\XKV@depth=\count88
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+)))
+("C:\Program Files\MiKTeX 2.9\tex\generic\pstricks\base\pst-fp.tex"
+`pst-fp' v0.05, 2010/01/17 (hv)
+\pstFP@xs=\count89
+\pstFP@xia=\count90
+\pstFP@xib=\count91
+\pstFP@xfa=\count92
+\pstFP@xfb=\count93
+\pstFP@rega=\count94
+\pstFP@regb=\count95
+\pstFP@regs=\count96
+\pstFP@times=\count97
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\utilities\pgfutil-common.tex"
+\pgfutil@everybye=\toks17
+\pgfutil@tempdima=\dimen105
+\pgfutil@tempdimb=\dimen106
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\utilities\pgfutil-common-lists.te
+x")) ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\utilities\pgfkeys.code.tex"
+\pgfkeys@pathtoks=\toks18
+\pgfkeys@temptoks=\toks19
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\utilities\pgfkeysfiltered.code.te
+x"
+\pgfkeys@tmptoks=\toks20
+)) ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\utilities\pgffor.code.tex"
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmath.code.tex"
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathcalc.code.tex"
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathutil.code.tex"
+\pgf@x=\dimen107
+\pgf@xa=\dimen108
+\pgf@xb=\dimen109
+\pgf@xc=\dimen110
+\pgf@y=\dimen111
+\pgf@ya=\dimen112
+\pgf@yb=\dimen113
+\pgf@yc=\dimen114
+\c@pgf@counta=\count98
+\c@pgf@countb=\count99
+\c@pgf@countc=\count100
+\c@pgf@countd=\count101
+\pgfutil@tempcnta=\count102
+\pgfutil@tempcntb=\count103
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathparser.code.tex"
+\pgfmath@dimen=\dimen115
+\pgfmath@count=\count104
+\pgfmath@box=\box26
+\pgfmath@toks=\toks21
+\pgfmath@stack@operand=\toks22
+\pgfmath@stack@operation=\toks23
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.code.tex"
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.basic.code.
+tex")
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.trigonometr
+ic.code.tex")
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.random.code
+.tex")
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.comparison.
+code.tex")
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.base.code.t
+ex")
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.round.code.
+tex")
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.misc.code.t
+ex")
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.integerarit
+hmetics.code.tex")))
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfloat.code.tex"
+\c@pgfmathroundto@lastzeros=\count105
+))
+\pgffor@iter=\dimen116
+\pgffor@skip=\dimen117
+\pgffor@stack=\toks24
+\pgffor@toks=\toks25
+)
+\psLoopIndex=\count106
+
+`PSTricks' v2.60  <2014/10/25> (tvz)
+\pst@dima=\dimen118
+\pst@dimb=\dimen119
+\pst@dimc=\dimen120
+\pst@dimd=\dimen121
+\pst@dimg=\dimen122
+\pst@dimh=\dimen123
+\pst@dimm=\dimen124
+\pst@dimn=\dimen125
+\pst@dimo=\dimen126
+\pst@dimp=\dimen127
+\pst@hbox=\box27
+\pst@ibox=\box28
+\pst@boxg=\box29
+\pst@cnta=\count107
+\pst@cntb=\count108
+\pst@cntc=\count109
+\pst@cntd=\count110
+\pst@cntg=\count111
+\pst@cnth=\count112
+\pst@cntm=\count113
+\pst@cntn=\count114
+\pst@cnto=\count115
+\pst@cntp=\count116
+\@zero=\count117
+\pst@toks=\toks26
+("C:\Program Files\MiKTeX 2.9\tex\generic\pstricks\base\pstricks.con")
+\psunit=\dimen128
+\psxunit=\dimen129
+\psyunit=\dimen130
+\pst@C@@rType=\count118
+\pslinewidth=\dimen131
+\psk@startLW=\dimen132
+\psk@endLW=\dimen133
+\pst@customdefs=\toks27
+\pslinearc=\dimen134
+\pst@symbolStep=\dimen135
+\pst@symbolWidth=\dimen136
+\pst@symbolLinewidth=\dimen137
+\everypsbox=\toks28
+\psframesep=\dimen138
+\pslabelsep=\dimen139
+\sh@wgridXunit=\dimen140
+\sh@wgridYunit=\dimen141
+\pst@shift=\dimen142
+)
+File: pstricks.tex 2014/10/25 v2.60 `PSTricks' (tvz,hv)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\pstricks\base\pst-fp.tex")
+File: pst-fp.tex 2014/10/25 v2.60 `PST-fp' (hv)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\xcolor\xcolor.sty"
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+))
+Package: pst-sigsys 2011/03/07 package wrapper for pst-sigsys.tex (fd)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\pst-sigsys\pst-sigsys.tex"
+("C:\Program Files\MiKTeX 2.9\tex\generic\pst-node\pst-node.tex"
+ v1.35, 2014/08/04
+\psrow=\count119
+\pscol=\count120
+\psmatrixcnt=\count121
+\psrowsep=\skip43
+\pscolsep=\skip44
+\pst@args=\count122
+\num@pts=\count123
+\pst@argcnt=\count124
+) `PST-SigSys' v1.4, 2011/03/07 (fd)
+\ss@ticklength=\dimen143
+\ss@signalsep=\dimen144
+\ss@zerowidth=\dimen145
+\ss@zeroradius=\dimen146
+\ss@zeroradiusinc=\dimen147
+\ss@polewidth=\dimen148
+\ss@polelength=\dimen149
+\ss@oplength=\dimen150
+\ss@opwidth=\dimen151
+\ss@opsep=\dimen152
+\ss@ldotssep=\dimen153
+\ss@ldotssize=\dimen154
+\ss@aoffset=\dimen155
+\ss@knoblength=\dimen156
+\ss@knobwidth=\dimen157
+\ss@temp@dimA=\dimen158
+\ss@temp@dimB=\dimen159
+\ss@temp@dimC=\dimen160
+\ss@temp@cnt=\count125
+\ss@calc@dim=\dimen161
+\ss@if@dimA=\dimen162
+\ss@if@dimB=\dimen163
+)
+File: pst-sigsys.tex 2011/03/07 v1.4 `PST-sigsys' (fd)
+) (SystemDesignDoc.aux)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+
+("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count126
+\scratchdimen=\dimen164
+\scratchbox=\box30
+\nofMPsegments=\count127
+\nofMParguments=\count128
+\everyMPshowfont=\toks29
+\MPscratchCnt=\count129
+\MPscratchDim=\dimen165
+\MPnumerator=\count130
+\makeMPintoPDFobject=\count131
+\everyMPtoPDFconversion=\toks30
+)
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 34.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 34.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 34.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 42.
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 42.
+ [1
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
+
+LaTeX Warning: File `ENSE 374 lab diagram.png' not found on input line 60.
+
+<ENSE 374 lab diagram.png, id=10, 1021.8175pt x 1115.16624pt>
+File: ENSE 374 lab diagram.png Graphic file (type png)
+
+<use ENSE 374 lab diagram.png>
+Package pdftex.def Info: ENSE 374 lab diagram.png used on input line 60.
+(pdftex.def)             Requested size: 256.0748pt x 279.4545pt.
+ [2 <./ENSE 374 lab diagram.png>]
+(SystemDesignDoc.aux) ) 
+Here is how much of TeX's memory you used:
+ 8856 strings out of 493698
+ 153667 string characters out of 3144412
+ 219789 words of memory out of 3000000
+ 12109 multiletter control sequences out of 15000+200000
+ 8144 words of font info for 29 fonts, out of 3000000 for 9000
+ 1025 hyphenation exceptions out of 8191
+ 43i,6n,42p,625b,197s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
+/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr1
+0.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:
+/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program 
+Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on SystemDesignDoc.pdf (2 pages, 110709 bytes).
+PDF statistics:
+ 32 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+
